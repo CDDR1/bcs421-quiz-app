@@ -4,13 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-    <Button
-        android:id="@+id/button"
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Button" />
+        android:text="You Earned:"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <!-- Horizontal Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <!-- Prompt Text -->
+    <TextView
+        android:id="@+id/textViewPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend."/>
+
+    <!-- Radio Buttons -->
+    <RadioGroup
+        android:id="@+id/radioGroupOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Option 1 -->
+        <RadioButton
+            android:id="@+id/radioButtonOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 1"/>
+
+        <!-- Option 2 -->
+        <RadioButton
+            android:id="@+id/radioButtonOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 2"/>
+
+        <!-- Option 3 -->
+        <RadioButton
+            android:id="@+id/radioButtonOption3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 3"/>
+
+        <!-- Option 4 -->
+        <RadioButton
+            android:id="@+id/radioButtonOption4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option 4"/>
+    </RadioGroup>
+
+    <!-- Confirm Button -->
+    <Button
+        android:id="@+id/buttonConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"/>
+
 </LinearLayout>
