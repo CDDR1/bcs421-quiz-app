@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Question2">
+    tools:context=".Question3">
 
     <!-- Title -->
     <TextView
@@ -27,7 +27,7 @@
         android:id="@+id/textViewPrompt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Which programming language is known for its use in data analysis and machine learning?"/>
+        android:text="Why is Java such a terrible programming language?"/>
 
     <!-- Radio Buttons -->
     <RadioGroup
@@ -41,28 +41,28 @@
             android:id="@+id/radioButtonOption1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Java"/>
+            android:text="Did you know that over 3 billion devices run java????? ☕"/>
 
         <!-- Option 2 -->
         <RadioButton
             android:id="@+id/radioButtonOption2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Erlang"/>
+            android:text="System.out.println()"/>
 
         <!-- Option 3 -->
         <RadioButton
             android:id="@+id/radioButtonOption3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ruby"/>
+            android:text="Literally nobody would code in Java if they didn't had to LOL"/>
 
         <!-- Option 4 -->
         <RadioButton
             android:id="@+id/radioButtonOption4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Python"/>
+            android:text="Pain"/>
     </RadioGroup>
 
     <!-- Confirm Button -->

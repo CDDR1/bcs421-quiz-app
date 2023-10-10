@@ -12,7 +12,7 @@
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You Earned:"
+        android:text="You Earned: 0"
         android:textSize="24sp"
         android:textStyle="bold"/>
 
@@ -27,7 +27,7 @@
         android:id="@+id/textViewPrompt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend."/>
+        android:text="What does HTML stand for in web development?"/>
 
     <!-- Radio Buttons -->
     <RadioGroup
@@ -41,28 +41,28 @@
             android:id="@+id/radioButtonOption1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option 1"/>
+            android:text="Hyper Text Mail Language"/>
 
         <!-- Option 2 -->
         <RadioButton
             android:id="@+id/radioButtonOption2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option 2"/>
+            android:text="Hyper Transfer Markup Language"/>
 
         <!-- Option 3 -->
         <RadioButton
             android:id="@+id/radioButtonOption3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option 3"/>
+            android:text="Hyper Text Markup Language"/>
 
         <!-- Option 4 -->
         <RadioButton
             android:id="@+id/radioButtonOption4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option 4"/>
+            android:text="Hyper Text Model Language"/>
     </RadioGroup>
 
     <!-- Confirm Button -->

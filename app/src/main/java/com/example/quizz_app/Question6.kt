@@ -7,10 +7,10 @@ import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
 
-class Question2 : AppCompatActivity() {
+class Question6 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_question2)
+        setContentView(R.layout.activity_question6)
 
         val textViewTitle = findViewById<TextView>(R.id.textViewTitle)
 
@@ -30,7 +30,7 @@ class Question2 : AppCompatActivity() {
                 points += 100
             }
 
-            val intent = Intent(this, Question3::class.java)
+            val intent = Intent(this, Question7::class.java)
             intent.putExtra("points", points)
             startActivity(intent)
         }

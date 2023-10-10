@@ -7,10 +7,10 @@ import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
 
-class Question2 : AppCompatActivity() {
+class Question4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_question2)
+        setContentView(R.layout.activity_question4)
 
         val textViewTitle = findViewById<TextView>(R.id.textViewTitle)
 
@@ -23,14 +23,14 @@ class Question2 : AppCompatActivity() {
         }
 
         val buttonConfirm = findViewById<Button>(R.id.buttonConfirm)
-        val radioButtonOption4 = findViewById<RadioButton>(R.id.radioButtonOption4)
+        val radioButtonOption1 = findViewById<RadioButton>(R.id.radioButtonOption1)
 
         buttonConfirm.setOnClickListener {
-            if (radioButtonOption4.isChecked) {
+            if (radioButtonOption1.isChecked) {
                 points += 100
             }
 
-            val intent = Intent(this, Question3::class.java)
+            val intent = Intent(this, Quetion5::class.java)
             intent.putExtra("points", points)
             startActivity(intent)
         }

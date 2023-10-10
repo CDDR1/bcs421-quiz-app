@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Question2">
+    tools:context=".Question7">
 
     <!-- Title -->
     <TextView
@@ -27,7 +27,7 @@
         android:id="@+id/textViewPrompt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Which programming language is known for its use in data analysis and machine learning?"/>
+        android:text="What does SQL stand for in database management?"/>
 
     <!-- Radio Buttons -->
     <RadioGroup
@@ -41,28 +41,28 @@
             android:id="@+id/radioButtonOption1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Java"/>
+            android:text="Structured Query Language"/>
 
         <!-- Option 2 -->
         <RadioButton
             android:id="@+id/radioButtonOption2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Erlang"/>
+            android:text="Simple Query Language"/>
 
         <!-- Option 3 -->
         <RadioButton
             android:id="@+id/radioButtonOption3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ruby"/>
+            android:text="Scripted Query Language"/>
 
         <!-- Option 4 -->
         <RadioButton
             android:id="@+id/radioButtonOption4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Python"/>
+            android:text="System Query Language"/>
     </RadioGroup>
 
     <!-- Confirm Button -->
