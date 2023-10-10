@@ -5,71 +5,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Question6">
+    tools:context=".Question6"
+    android:padding="16dp">
 
-    <!-- Title -->
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You Earned:"
         android:textSize="24sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
 
-    <!-- Horizontal Line -->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#000000"/>
+        android:background="#000000"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
 
-    <!-- Prompt Text -->
     <TextView
         android:id="@+id/textViewPrompt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="In object-oriented programming, what is encapsulation?"/>
+        android:text="In object-oriented programming, what is encapsulation?"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp" />
 
-    <!-- Radio Buttons -->
     <RadioGroup
         android:id="@+id/radioGroupOptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Option 1 -->
         <RadioButton
             android:id="@+id/radioButtonOption1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The process of creating objects"/>
+            android:text="The process of creating objects" />
 
-        <!-- Option 2 -->
         <RadioButton
             android:id="@+id/radioButtonOption2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The process of inheriting properties from a parent class"/>
+            android:text="The process of inheriting properties from a parent class" />
 
-        <!-- Option 3 -->
         <RadioButton
             android:id="@+id/radioButtonOption3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="The process of defining a new class based on an existing class"/>
+            android:text="The process of defining a new class based on an existing class" />
 
-        <!-- Option 4 -->
         <RadioButton
             android:id="@+id/radioButtonOption4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" The process of hiding the internal details of an object and exposing only what is necessary"/>
+            android:text="The process of hiding the internal details of an object and exposing only what is necessary" />
     </RadioGroup>
 
-    <!-- Confirm Button -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
     <Button
         android:id="@+id/buttonConfirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Confirm"/>
+        android:text="Confirm"
+        android:layout_gravity="center" />
 
 </LinearLayout>

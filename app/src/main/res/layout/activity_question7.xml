@@ -5,71 +5,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Question7">
+    tools:context=".Question7"
+    android:padding="16dp">
 
-    <!-- Title -->
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You Earned:"
         android:textSize="24sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
 
-    <!-- Horizontal Line -->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#000000"/>
+        android:background="#000000"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
 
-    <!-- Prompt Text -->
     <TextView
         android:id="@+id/textViewPrompt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="What does SQL stand for in database management?"/>
+        android:text="What does SQL stand for in database management?"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp" />
 
-    <!-- Radio Buttons -->
     <RadioGroup
         android:id="@+id/radioGroupOptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Option 1 -->
         <RadioButton
             android:id="@+id/radioButtonOption1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Structured Query Language"/>
+            android:text="Structured Query Language" />
 
-        <!-- Option 2 -->
         <RadioButton
             android:id="@+id/radioButtonOption2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Simple Query Language"/>
+            android:text="Simple Query Language" />
 
-        <!-- Option 3 -->
         <RadioButton
             android:id="@+id/radioButtonOption3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Scripted Query Language"/>
+            android:text="Scripted Query Language" />
 
-        <!-- Option 4 -->
         <RadioButton
             android:id="@+id/radioButtonOption4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="System Query Language"/>
+            android:text="System Query Language" />
     </RadioGroup>
 
-    <!-- Confirm Button -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
     <Button
         android:id="@+id/buttonConfirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Confirm"/>
+        android:text="Confirm"
+        android:layout_gravity="center" />
 
 </LinearLayout>
