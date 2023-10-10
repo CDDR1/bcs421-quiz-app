@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.TextView
+import android.widget.Toast
 
 class Question2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +17,7 @@ class Question2 : AppCompatActivity() {
 
         val extras = intent.extras
         var points = 0
+        var toastMessage = "Incorrect Answer"
 
         if (extras != null) {
             points = extras?.getInt("points", 0)!!
@@ -28,11 +30,14 @@ class Question2 : AppCompatActivity() {
         buttonConfirm.setOnClickListener {
             if (radioButtonOption4.isChecked) {
                 points += 100
+                toastMessage = "That's correct! You earned $100 \uD83E\uDD11"
             }
 
             val intent = Intent(this, Question3::class.java)
             intent.putExtra("points", points)
             startActivity(intent)
+
+            Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT).show();
         }
     }
 }
