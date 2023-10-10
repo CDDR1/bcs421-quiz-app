@@ -13,8 +13,8 @@ class Question2 : AppCompatActivity() {
 
         val extras = intent.extras
         if (extras != null) {
-            val number = extras.getInt("number_key", 0)
-            textViewTitle.text = "You earned: $ $number"
+            val points = extras?.getInt("points", 0)
+            textViewTitle.text = "You earned: $ $points"
         }
     }
 }

@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.RadioButton
+import android.widget.RadioGroup
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -13,13 +15,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button = findViewById<Button>(R.id.buttonConfirm)
-        button.setOnClickListener {
+        val buttonConfirm = findViewById<Button>(R.id.buttonConfirm)
+        val radioButtonOption3 = findViewById<RadioButton>(R.id.radioButtonOption3)
+        var points = 0
+
+        buttonConfirm.setOnClickListener {
+            if (radioButtonOption3.isChecked) {
+                points += 100
+            }
+
             val intent = Intent(this, Question2::class.java)
-
-            val number = 42
-            intent.putExtra("number_key", number)
-
+            intent.putExtra("points", points)
             startActivity(intent)
         }
     }
